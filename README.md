@@ -22,7 +22,7 @@ There are a few reasons why this is useful:
 
     ```groovy
     plugins {
-        id("com.github.raymank26.build-number") version "0.0.1"
+        id("io.github.raymank26.build-number") version "0.0.1"
     }
     ```
 
