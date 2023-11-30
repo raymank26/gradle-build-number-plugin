@@ -15,6 +15,7 @@ There are a few reasons why this is useful:
 
 - `:createBuildNumber` — creates a `build.number` file with a version equal to `0.0.1`.
 - `:incrementBuildNumber` — increments a fix version in a `build.number` file.
+- `:refreshBuildNumber` — updates a date (top commented line) in a `build.number` file.
 
 ## Usage
 
