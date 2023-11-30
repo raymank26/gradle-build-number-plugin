@@ -3,8 +3,8 @@ plugins {
     id("com.gradle.plugin-publish") version "1.2.1"
 }
 
-group = "com.github.raymank26"
-version = "0.0.1-SNAPSHOT"
+group = "io.github.raymank26"
+version = "0.0.1"
 
 repositories {
     mavenCentral()
@@ -28,14 +28,16 @@ kotlin {
 }
 
 gradlePlugin {
-    website = "https://github.com/ysb33r/gradleTest"
+    website = "https://github.com/raymank26/gradle-build-number-plugin"
+    vcsUrl = "https://github.com/raymank26/gradle-build-number-plugin.git"
 
     plugins {
         create("buildNumberPlugin") {
-            id = "com.github.raymank26.build-number"
+            id = "io.github.raymank26.build-number"
             displayName = "Plugin for configuring a project version in build.number file"
+            description = "Plugin for configuring a project version in build.number file"
             tags = listOf("release", "version")
-            implementationClass = "com.github.raymank26.build.number.plugin.BuildNumberPlugin"
+            implementationClass = "io.github.raymank26.build.number.plugin.BuildNumberPlugin"
         }
     }
 }

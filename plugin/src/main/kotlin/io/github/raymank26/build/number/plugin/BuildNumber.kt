@@ -1,4 +1,4 @@
-package com.github.raymank26.build.number.plugin
+package io.github.raymank26.build.number.plugin
 
 import org.gradle.api.Project
 import java.util.*

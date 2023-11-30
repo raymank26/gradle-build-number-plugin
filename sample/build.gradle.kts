@@ -1,8 +1,8 @@
-import com.github.raymank26.build.number.plugin.getBuildNumberVersion
+import io.github.raymank26.build.number.plugin.getBuildNumberVersion
 
 plugins {
     id("java")
-    id("com.github.raymank26.build-number")
+    id("io.github.raymank26.build-number")
 }
 
 group = "org.example"
