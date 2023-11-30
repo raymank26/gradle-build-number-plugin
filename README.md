@@ -5,6 +5,7 @@ This plugin helps to maintain a version of Gradle project in a separate `build.n
 ## Tasks
 
 `:createBuildNumber` — creates a `build.number` file with a version equals to `0.0.1`.
+
 `:incrementBuildNumber` — increments a fix version in a `build.number` file.
 
 ## A structure of a `build.number` file
