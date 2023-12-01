@@ -11,6 +11,7 @@ fun Project.getBuildNumberVersion(): String {
         file("build.number").reader().use { reader -> prop.load(reader) }
         prop.getProperty("version") ?: DEFAULT_VALUE
     } catch (e: Exception) {
+        logger.debug("Unable to get a version from build.number file", e)
         DEFAULT_VALUE
     }
 }
